@@ -1,0 +1,83 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background-image:url(img/photos.webp) ;
+}   
+
+#head-title{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 2%;
+}
+ /* form  */
+
+fieldset{
+ padding: 50px;
+ margin: 40px;
+ border-radius: 80px;
+ width: 5px;
+background-image:url(img/phoyo\ mekup.jbg) ;
+}
+#nom ,#marque,#sonprix,#sondate{
+    width: 800px;
+    height: 40px;
+    margin: 5px;
+    border-radius: 10px;
+}
+                 /* tybe */
+
+Select{
+    height: 50px;
+    width: 800px;
+    border-radius: 10px;
+
+}
+
+         /*   table de formilaire */
+
+table , th, td{
+ border: 2px solid white;
+ padding: 4px;
+  margin-left: 50px;
+}
+input[type=button]{
+
+    margin-left: 3%;
+    font-size: 16px;
+    width: 16%;
+    padding: 10px;
+    cursor: pointer;
+    color: yellow;
+    transition: all 0.2s ;
+}
+
+ 
+
+
+@media screen and (max-width: 500px){
+    #nom ,#marque,#sonprix,#sondate{
+    width: 300px;
+    
+}
+Select {
+    
+    width: 305px;
+   
+}
+table, th, td {
+    
+   
+    margin-left: 11px;
+}
+fieldset {
+    padding: 22px;
+    margin: 21px;
+   
+}
+
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:wght@200;800&display=swap" rel="stylesheet">
+    <title>magasin de vente de produits cosmétiques</title>
+    <link rel="stylesheet" href="produit.css">
+</head>
+<body>
+    <main>
+        <header>
+            <div>
+                   <!-- title -->
+                <h1>mekup</h1>
+            </div>
+                 
+        </header>
+       <!-- form -->
+       <form id="Form">
+        <fieldset>
+            <legend id="head-title">inscriptions</legend>
+            <input type="text"placeholder="Entrez votre Nom" id="nom"><br>
+            <P id="error"></P>
+            <select name="" id="marque">
+                <option value="huda beute">huda beute</option>
+                <option value="ever beut">ever beuty</option>
+                <option value="clinique">clinique</option> 
+                <option value="kiss beuty">kiss beuty</option>
+            </select><BR>
+            <input type="text" placeholder=" Entrez votre Son prix" id="sonprix"><br>
+            <input type="date" placeholder=" Entrez votre Son date" id="sondate"><br>
+            <P id="error"></P>
+            
+
+                 <!-- tybe de magasin -->
+
+            <select name="" id="marque2">
+                <option >hygiène et toilette</option>
+                <option >soins esthétiques</option>
+                <option >produits solaires</option>
+                <option> beauté des mains et des pieds</option>
+                <option >produits de maquillag</option>
+                <option >entretien capillaires</option>
+                <option >parfums</option>
+            </select>
+
+            <!-- radio bouton (Oui, Non). -->
+
+               <label style="font-weight:bold ;" for=""><input type="radio" id="oui" value="oui"  name="promtions">oui</label>
+               <label style="font-weight:bold ;" for=""><input type="radio" id="non"value="non"  name="promtions">non</label><br>
+
+                     <!-- button -->
+            <input type="button"value="ajouter" id="button">
+            <input type="button" id="modifier" onclick="EditRow()" value="modifer">
+         </fieldset>
+       </form>
+
+       <!-- table -->
+<table id="table" style="font-weight:bold ;">
+       <tr>
+        <th> Nom</th>
+        <th> Sa Marque</th>
+        <th>son dat</th>
+        <th>Son prix</th>
+        <th>tybe de magasin</th>
+        <th>oui/non</th>
+        <th>action</th>
+       </tr>                                                                                            
+</table>
+    </main>
+    <script src="produit.js"></script>
+</body>
+</html>
